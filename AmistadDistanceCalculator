@@ -1,0 +1,22 @@
+# Import the 'math' module to use mathematical functions like math.sqrt()
+import math
+
+# This part of the code asks the user for input, numbers only
+# Float represents real numbers that contain a fractional part.
+# This is needed for the code to work because it requires division especially if its an odd and an even number.
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+
+# This function uses the distance formula to calculate x1, x2, y1, y2: (x2 - x1)² + (y2 - y1)²
+d_squared = (x2 - x1) ** 2 + (y2 - y1) ** 2
+
+# I fixed the spacing
+print("")
+
+# We can't get the square root in the same code as the one on top so we will use it here
+distance = math.sqrt(d_squared)
+
+# This code will print the final result, the code ".2f" gives the answer 2 decimal points even if not needed.
+print(f"The distance between the points is: {distance:.2f}")
